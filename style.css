@@ -6,3 +6,102 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
+
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color: #F5F5F6;
+    height: 50px;
+    font-size: 11px;
+    font-weight: 500;
+
+}
+.logo {
+    height: 23px;
+    margin-left: 100px;
+    align-self: center;
+}
+
+.list {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    align-self: center;
+}
+.list li:nth-child(1) a {
+    color: black;
+}
+.list  a {
+    text-decoration: none;
+    color: #959BA4;
+}
+.login {
+    align-self: center;
+    width: 58px;
+    height: 33px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 4px;
+    margin-right: 102px;
+}
+
+main {
+    padding: 56px 258px 0px 253px;
+}
+h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 33px;
+}
+.column p{
+    font-size: 12px;
+    color: #C6C6C6;
+}
+.unit{
+    display: flex;
+    width: 260px;
+    height: 30px;
+    margin: 10px 0 20px;
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    
+}
+.unit p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 28px;
+    border-right: 1px solid #E5E5E5;
+
+    
+}
+.unit p:last-child{
+    border-right: none;
+}
+.box{
+    border: 1px solid #E5E5E5;
+    border-radius: 3px;
+    width: 260px;
+    height: 102px;
+}
+input{
+    font-size: 36px;
+    font-weight: bold;
+    width: 150px;
+    margin-top: 11px;
+    margin-left: 14px;
+    border: none;
+    outline: none;
+}
+.box div{
+    font-size: 12px;
+    color: #C6C6C6;
+    margin: 22px 0 0 14px;
+}
+.container{
+    display: flex;
+    gap: 123px;
+}

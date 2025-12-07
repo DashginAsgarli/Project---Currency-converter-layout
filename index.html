@@ -1,17 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    
+    <header>
+        <img src="./img/Asset 1@3x 1.svg" alt="bank-logo" class="logo">
+        <ul class="list">
+            <li><a href="#">БАНК</a></li>
+            <li><a href="#">БИЗНЕС</a></li>
+            <li><a href="#">ИНВЕСТИЦИИ</a></li>
+            <li><a href="#">СТРАХОВАНИЕ</a></li>
+            <li><a href="#">МОБАЙЛ</a></li>
+            <li><a href="#">ПУТЕШЕСТВИЯ</a></li>
+            <li><a href="#">РАЗВЛЕЧЕНИЯ</a></li>
+        </ul>
+        <div class="login">ВОЙТИ</div>
+    </header>
+
+    <main>
+        <h1>Конвертер валют онлайн</h1>
+        <div class="container">
+            <div class="column">
+                <p>У меня есть </p>
+                <div class="unit">
+                    <p>RUB</p>
+                    <p>USD</p>
+                    <p>EUR</p>
+                    <p>GBP</p>
+                </div>
+                <div class="box">
+                    <input type="text" id="amount">
+                    <div>1 RUB = 0.0135 USD</div>
+                </div>
+            </div>
+
+
+            <div class="column">
+                <p>Хочу приобрести </p>
+                <div class="unit">
+                    <p>RUB</p>
+                    <p>USD</p>
+                    <p>EUR</p>
+                    <p>GBP</p>
+                </div>
+                <div class="box">
+                    <input type="text" id="amount">
+                    <div>1 USD = 73.8896 RUB</div>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 
 
     <script src="app.js"></script>
 </body>
+
 </html>
