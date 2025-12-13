@@ -83,8 +83,6 @@ h1 {
     border-right: 1px solid #E5E5E5;
 }
 
-
-
 .unit p:last-child {
     border-right: none;
 }
@@ -117,29 +115,24 @@ input {
     gap: 123px;
 }
 
-.color1 {
-    background-color: #833AE0;
-    color: white !important;
-
-}
-
-.color2 {
+.color {
     background-color: #833AE0;
     color: white !important;
 }
 
-.internet {
+.internet-div {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 70px;
     width: 450px;
     padding: 15px;
+    color: red;
     border-radius: 40px;
     gap: 10px;
     font-weight: 500;
     font-size: 30px;
-    box-shadow: 2px 0px 10px rgba(0, 0, 0, 5);
+    box-shadow: 2px 0px 10px rgba(248, 0, 33, 0.5);
 }
 
 .internet img {
@@ -149,10 +142,13 @@ input {
 .wifi-container {
     display: flex;
     justify-content: center;
+
 }
 
 .wifi-text {
     font-size: 1.5vw;
+    text-shadow: 2px 0px 15px rgba(248, 0, 33, 1);
+
 }
 
 /* Tablet*/
@@ -197,15 +193,13 @@ input {
     }
 
     main {
-        padding: 10vw 0 4vw 15vw;
+        padding: 10vw 0 0 15vw;
     }
 
-    .internet {
+    .internet-div {
         width: 45vw;
         padding: 1.2vw;
-        box-shadow: 0.261vw 0 1.302vw rgba(0, 0, 0, 0.5);
-        margin-bottom: 50px;
-
+        margin-bottom: 40px;
     }
 
     .internet img {
@@ -227,7 +221,8 @@ input {
         height: 3vw;
         margin-left: 12vw;
     }
-    h1{
+
+    h1 {
         font-size: 6vw;
     }
 
@@ -281,11 +276,10 @@ input {
         margin-left: 4vw;
     }
 
-    .internet {
+    .internet-div {
         width: 40vw;
         padding: 2vw;
         margin-bottom: 20px;
-
     }
 
     .internet img {
