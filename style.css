@@ -8,17 +8,17 @@
 }
 
 header {
+    height: 50px;
     display: flex;
     justify-content: space-between;
     background-color: #F5F5F6;
-    height: 50px;
-    font-size: 11px;
+    font-size: 0.9vw;
     font-weight: 500;
-
 }
+
 .logo {
     height: 23px;
-    margin-left: 100px;
+    margin-left: 7vw;
     align-self: center;
 }
 
@@ -28,13 +28,16 @@ header {
     list-style: none;
     align-self: center;
 }
+
 .list li:nth-child(1) a {
     color: black;
 }
-.list  a {
+
+.list a {
     text-decoration: none;
     color: #959BA4;
 }
+
 .login {
     align-self: center;
     width: 58px;
@@ -44,50 +47,56 @@ header {
     justify-content: center;
     align-items: center;
     border-radius: 4px;
-    margin-right: 102px;
+    margin-right: 7vw;
 }
 
 main {
     padding: 56px 258px 0px 253px;
 }
+
 h1 {
     font-size: 36px;
     font-weight: bold;
     margin-bottom: 33px;
 }
-.column p{
+
+.column p {
     font-size: 12px;
     color: #C6C6C6;
 }
-.unit{
+
+.unit {
     display: flex;
     width: 260px;
     height: 30px;
     margin: 10px 0 20px;
     border: 1px solid #E5E5E5;
     border-radius: 3px;
-    
 }
+
 .unit p {
     display: flex;
     align-items: center;
     justify-content: center;
     width: 65px;
-    height: 28px;
+    height: 29px;
     border-right: 1px solid #E5E5E5;
-
-    
 }
-.unit p:last-child{
+
+
+
+.unit p:last-child {
     border-right: none;
 }
-.box{
+
+.box {
     border: 1px solid #E5E5E5;
     border-radius: 3px;
     width: 260px;
     height: 102px;
 }
-input{
+
+input {
     font-size: 36px;
     font-weight: bold;
     width: 150px;
@@ -96,12 +105,194 @@ input{
     border: none;
     outline: none;
 }
-.box div{
+
+.box div {
     font-size: 12px;
     color: #C6C6C6;
-    margin: 22px 0 0 14px;
+    margin: 2vw 0 0 1vw;
 }
-.container{
+
+.container {
     display: flex;
     gap: 123px;
+}
+
+.color1 {
+    background-color: #833AE0;
+    color: white !important;
+
+}
+
+.color2 {
+    background-color: #833AE0;
+    color: white !important;
+}
+
+.internet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 70px;
+    width: 450px;
+    padding: 15px;
+    border-radius: 40px;
+    gap: 10px;
+    font-weight: 500;
+    font-size: 30px;
+    box-shadow: 2px 0px 10px rgba(0, 0, 0, 5);
+}
+
+.internet img {
+    width: 2vw;
+}
+
+.wifi-container {
+    display: flex;
+    justify-content: center;
+}
+
+.wifi-text {
+    font-size: 1.5vw;
+}
+
+/* Tablet*/
+@media screen and (max-width: 1023px) and (min-width: 768px) {
+    header {
+        font-size: 1vw;
+    }
+
+    .logo {
+        height: 2.2vw;
+        margin-left: 10vw;
+    }
+
+    .unit {
+        width: 30vw;
+        height: 3.5vw;
+    }
+
+    .unit p {
+        width: 8.5vw;
+        height: 3.3vw;
+    }
+
+    .box {
+        width: 30vw;
+        height: 13.281vw;
+    }
+
+    input {
+        font-size: 30px;
+        width: 17vw;
+    }
+
+    .box div {
+        font-size: 14px;
+        margin-top: 4vw;
+        margin-left: 1.5vw;
+    }
+
+    .container {
+        gap: 10vw;
+    }
+
+    main {
+        padding: 10vw 0 4vw 15vw;
+    }
+
+    .internet {
+        width: 45vw;
+        padding: 1.2vw;
+        box-shadow: 0.261vw 0 1.302vw rgba(0, 0, 0, 0.5);
+        margin-bottom: 50px;
+
+    }
+
+    .internet img {
+        width: 3vw;
+    }
+
+    .wifi-text {
+        font-size: 2vw;
+    }
+}
+
+/* Mobile*/
+@media screen and (max-width: 767px) {
+    header {
+        font-size: 11px;
+    }
+
+    .logo {
+        height: 3vw;
+        margin-left: 12vw;
+    }
+    h1{
+        font-size: 6vw;
+    }
+
+    .list {
+        display: none;
+    }
+
+    .login {
+        font-size: 1.5vw;
+        padding: 0.5vw 4vw;
+        margin-right: 10vw;
+    }
+
+    main {
+        padding: 13vw 21vw 1vw;
+    }
+
+    .container {
+        flex-direction: column;
+        gap: 20vw;
+    }
+
+    .column p {
+        font-size: 2.5vw;
+    }
+
+    .unit {
+        width: 100%;
+        height: 7vw;
+    }
+
+    .unit p {
+        width: 20vw;
+        height: 6.7vw;
+    }
+
+    .box {
+        width: 100%;
+        height: 28.333vw;
+    }
+
+    input {
+        font-size: 5vw;
+        width: 41vw;
+        margin-top: 4vw;
+        margin-left: 4vw;
+    }
+
+    .box div {
+        margin-top: 12vw;
+        margin-left: 4vw;
+    }
+
+    .internet {
+        width: 40vw;
+        padding: 2vw;
+        margin-bottom: 20px;
+
+    }
+
+    .internet img {
+        width: 4vw;
+    }
+
+    .wifi-text {
+        font-size: 2vw;
+    }
 }
