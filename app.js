@@ -48,14 +48,14 @@ function convert() {
         rightBox.innerHTML = `1 ${to} = 1 ${from}`;
     }
     else {
-        fetch(`https://api.exchangerate.host/convert?access_key=28adfddfba6b042b26e0fb0b93b55e61&from=${from}&to=${to}&amount=${amount}`)
+        fetch(`https://api.exchangerate.host/convert?access_key=98130d664403c7c6a6a890d5c70d6d6a&from=${from}&to=${to}&amount=${amount}`)
             .then(res => res.json())
             .then(data => {
                 output.value = data.result.toFixed(4);
 
-                const rate = data.result / amount;
-                leftBox.innerHTML = `1 ${from} = ${rate.toFixed(6)} ${to}`;
-                rightBox.innerHTML = `1 ${to} = ${(1 / rate).toFixed(6)} ${from}`;
+                let rate = data.result / amount;
+                leftBox.innerHTML = `1 ${from} = ${rate.toFixed(5)} ${to}`;
+                rightBox.innerHTML = `1 ${to} = ${(1 / rate).toFixed(5)} ${from}`;
             })
     }
 }
@@ -83,5 +83,6 @@ pRight.forEach(p => {
         convert();
     });
 });
+// qisalt
 convert();
 // // 130
